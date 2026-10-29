@@ -100,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (loggedInUser && navbar) {
         navbar.innerHTML = `
             <a href="carrental.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
             <a href="reserve.html" class="nav-link">Rent</a>
             <a href="return.html" class="nav-link">Return</a>
             <a href="payment.html" class="nav-link">Payment</a>
