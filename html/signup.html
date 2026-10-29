@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - AZoom Car Rentals</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../carrental.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo">
+            <img src="../image/logo.png" alt="logo-image">
+            <h1><a href="carrental.html">AZoom Car Rentals</a></h1>
+        </div>
+
+        <!-- 💡 Hamburger Toggle Button -->
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <a href="carrental.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="reserve.html" class="nav-link">Rent</a>
+            <a href="return.html" class="nav-link">Return</a>
+            <a href="payment.html" class="nav-link">Payment</a>
+            <!-- Login/Signup links update automatically via carrental.js when logged in -->
+            <a href="login.html" class="nav-link">Login</a>
+            <a href="signup.html" class="nav-link">Signup</a>
+        </nav>
+    </header>
+
+    <!-- Signup Form Container -->
+    <main class="auth-wrapper">
+        <div class="auth-card">
+            <h2>Create an Account</h2>
+            <p class="auth-subtitle">Sign up to get started with AZoom Car Rentals</p>
+
+            <form class="auth-form">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="create a password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password"
+                        placeholder="confirm your password" required>
+                </div>
+
+                <button type="submit" class="btn-submit">Sign Up</button>
+            </form>
+
+            <p class="auth-switch">
+                Already have an account? <a href="login.html">Login</a>
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>AZoom Car Rentals</h3>
+                <p>Your journey, your way. Premium vehicles for every adventure.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="carrental.html">Home</a></li>
+                    <li><a href="reserve.html">Rent a Car</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Support</h3>
+                <p>Support: 24/7 Chat Available</p>
+                <p>Email: support@azoomrentals.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AZoom Car Rentals. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../carrental.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../image/logo.png" alt="logo-image">
+            <h1><a href="#">AZoom Car Rentals</a></h1>
+        </div>
+
+        <!-- 💡 Hamburger Toggle Button -->
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <a href="carrental.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="reserve.html" class="nav-link">Rent</a>
+            <a href="return.html" class="nav-link">Return</a>
+            <a href="payment.html" class="nav-link">Payment</a>
+            <!-- Login/Signup links update automatically via carrental.js when logged in -->
+            <a href="login.html" class="nav-link">Login</a>
+            <a href="signup.html" class="nav-link">Signup</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-banner">
+            <div class="slides-track">
+                <!-- Slide 1 -->
+                <div class="slide" style="background-image: url('../image/coolcar.jpg');">
+                    <div class="hero-content">
+                        <h1>Rent Your Dream Car</h1>
+                        <button class="btn" id="heroBookBtn">Book a car</button>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide" style="background-image: url('../image/coolcar2.jpg');">
+                    <div class="hero-content">
+                        <h1>Luxury Awaits You</h1>
+                        <button class="btn" id="heroExploreBtn">Explore Fleet</button>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide" style="background-image: url('../image/coolcar3.png');">
+                    <div class="hero-content">
+                        <h1>Best Rates In Town</h1>
+                        <button class="btn" id="heroOffersBtn">View Offers</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="promotion">
+            <h2>Special Promotions today!</h2>
+            <div class="promotion-container">
+                <article class="promo-card">
+                    <h3>Weekend Special</h3>
+                    <p>Enjoy 10% off weekend rentals.</p>
+                    <a href="#" class="promo-link" data-promo="weekend">Learn More</a>
+                </article>
+                <article class="promo-card">
+                    <h3>Long-Term Rent?</h3>
+                    <p>Save more when you rent for long-term.</p>
+                    <a href="#" class="promo-link" data-promo="longterm">Learn More</a>
+                </article>
+                <article class="promo-card">
+                    <h3>New Customer</h3>
+                    <p>Get a discount on your first rental</p>
+                    <a href="#" class="promo-link" data-promo="newcustomer">Learn More</a>
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="car-section">
+            <h2>Featured Electric Vehicles</h2>
+            <div class="car-grid">
+                <article class="car-card">
+                    <img src="../image/2022_polestar_2_bst_edition_270_4k_8k-1920x1080.jpg"
+                        alt="Polestar 2 BST Edition">
+                    <h3>Polestar 2 BST Edition</h3>
+                    <p>From $110 / day</p>
+                    <a href="reserve.html" class="btn">Rent Now</a>
+                </article>
+                <article class="car-card">
+                    <img src="../image/2022-Audi-e-tron-GT-Front-Right-4.jpg" alt="Audi e-tron GT">
+                    <h3>Audi e-tron GT</h3>
+                    <p>From $150 / day</p>
+                    <a href="reserve.html" class="btn">Rent Now</a>
+                </article>
+                <article class="car-card">
+                    <img src="../image/2025-porsche-taycan.webp" alt="Porsche Taycan">
+                    <h3>Porsche Taycan Turbo</h3>
+                    <p>From $170 / day</p>
+                    <a href="reserve.html" class="btn">Rent Now</a>
+                </article>
+                <article class="car-card">
+                    <img src="../image/rivian.jfif" alt="Rivian R1T">
+                    <h3>Rivian R1T Electric Truck</h3>
+                    <p>From $130 / day</p>
+                    <a href="reserve.html" class="btn">Rent Now</a>
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="review-section">
+            <h2>What our customer says?</h2>
+            <div class="review-container">
+                <article class="review-card">
+                    <p>"Booking process was swift and simple."</p>
+                    <img src="../image/human1.jpg" alt="Customer Profile" class="review-avatar">
+                    <h3>Wendy Lee</h3>
+                    <div class="star">
+                        <p>★★★★★</p>
+                    </div>
+                </article>
+                <article class="review-card">
+                    <p>"Great service and very friendly staff. I will rent again"</p>
+                    <img src="../image/human2.webp" alt="Customer Profile" class="review-avatar">
+                    <h3>John Tan</h3>
+                    <div class="star">
+                        <p>★★★★★</p>
+                    </div>
+                </article>
+                <article class="review-card">
+                    <p>"Prices were reasonable for luxurious rides."</p>
+                    <img src="../image/human3.jfif" alt="Customer Profile" class="review-avatar">
+                    <h3>Vincent Lim</h3>
+                    <div class="star">
+                        <p>★★★★★</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- Promotion Details Modal -->
+        <div class="modal-overlay hidden" id="promoModal">
+            <div class="modal-card">
+                <button class="modal-close" id="closePromoModal">&times;</button>
+                <h3 id="promoModalTitle" style="margin-bottom: 12px; font-size: 20px; color: #222;">Promotion Details
+                </h3>
+                <p id="promoModalDesc" style="font-size: 14px; color: #555; line-height: 1.5; margin-bottom: 20px;"></p>
+                <button class="btn-submit" id="promoModalActionBtn" style="width: 100%;">Got it</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>AZoom Car Rentals</h3>
+                <p>Your journey, your way. Premium vehicles for every adventure.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="carrental.html">Home</a></li>
+                    <li><a href="reserve.html">Rent a Car</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Support</h3>
+                <p>Support: 24/7 Chat Available</p>
+                <p>Email: support@azoomrentals.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AZoom Car Rentals. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

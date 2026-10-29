@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Car - AZoom Car Rentals</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../carrental.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../image/logo.png" alt="logo-image">
+            <h1><a href="carrental.html">AZoom Car Rentals</a></h1>
+        </div>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <a href="carrental.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="reserve.html" class="nav-link active">Rent</a>
+            <a href="return.html" class="nav-link">Return</a>
+            <a href="payment.html" class="nav-link">Payment</a>
+            <a href="login.html" class="nav-link">Login</a>
+            <a href="signup.html" class="nav-link">Signup</a>
+        </nav>
+    </header>
+
+    <main class="main-layout main-layout-padded">
+        <section class="car-section" style="width: 100%;">
+            <div class="text-center-mt15" style="margin-bottom: 30px;">
+                <h2>Choose Your Ride</h2>
+                <p class="text-muted-medium">Select dates and book your supercar. Rent for 7+ days to get 10% OFF!</p>
+            </div>
+
+            <!-- Rental Date Selector Bar -->
+            <div class="date-selector-container">
+                <div>
+                    <label class="date-label">Pick-up Date:</label>
+                    <input type="date" id="pickupDate" class="date-input">
+                </div>
+                <div>
+                    <label class="date-label">Return Date:</label>
+                    <input type="date" id="returnDate" class="date-input">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="pickupLocation">Pick-up Location / Branch:</label>
+                <select id="pickupLocation" class="form-control" required>
+                    <option value="">Select Pick-up Branch</option>
+                    <option value="AZoom HQ - Downtown Central">AZoom HQ - Downtown Central</option>
+                    <option value="AZoom Airport Hub - Terminal 3">AZoom Airport Hub - Terminal 3</option>
+                    <option value="AZoom North Branch - Woodlands">AZoom North Branch - Woodlands</option>
+                    <option value="AZoom West Hub - Jurong East">AZoom West Hub - Jurong East</option>
+                </select>
+            </div>
+
+            <!-- Dynamic Car Grid -->
+            <div class="car-grid" id="carCatalogGrid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>AZoom Car Rentals</h3>
+                <p>Your journey, your way. Premium vehicles for every adventure.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="carrental.html">Home</a></li>
+                    <li><a href="reserve.html">Rent a Car</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Support</h3>
+                <p>Support: 24/7 Chat Available</p>
+                <p>Email: support@azoomrentals.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AZoom Car Rentals. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

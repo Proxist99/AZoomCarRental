@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Inspection Portal - AZoom</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../carrental.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../image/logo.png" alt="logo-image">
+            <h1><a href="carrental.html">AZoom Staff Portal</a></h1>
+        </div>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <a href="employee.html" class="nav-link active">Staff Portal</a>
+        </nav>
+    </header>
+
+    <main class="main-layout main-layout-padded">
+        <div class="container-narrow">
+
+            <!-- Employee Login Section -->
+            <div id="employeeLoginCard" class="auth-card-box">
+                <h2>Staff Login</h2>
+                <p class="text-muted-small">Enter staff credentials to inspect returns.</p>
+                <form id="employeeLoginForm">
+                    <div class="form-group-mb15">
+                        <label class="form-label-block">Staff Email</label>
+                        <input type="email" id="empEmail" required class="form-input-field">
+                    </div>
+                    <div class="form-group-mb20">
+                        <label class="form-label-block">Password</label>
+                        <input type="password" id="empPassword" required class="form-input-field">
+                    </div>
+                    <button type="submit" class="btn-submit btn-teal-solid">Login as Staff</button>
+                </form>
+            </div>
+
+            <!-- Employee Inspection Dashboard -->
+            <div id="employeeDashboard" style="display: none;">
+                <div class="flex-space-between">
+                    <h2>Vehicle Inspection Queue</h2>
+                </div>
+                <p class="text-muted-small">Review cars awaiting inspection and log any damages.</p>
+
+                <div id="inspectionQueueList" class="flex-column-gap">
+                    <!-- Dynamically populated inspection cards -->
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>AZoom Car Rentals</h3>
+                <p>Staff Portal & Fleet Inspection System.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AZoom Car Rentals. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
