@@ -181,24 +181,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 4. Support Popup Toggle
-    const toggleSupportBtn = document.getElementById('toggleSupportBtn');
-    const closeSupportBtn = document.getElementById('closeSupportBtn');
-    const supportPopup = document.getElementById('supportPopup');
-
-    if (toggleSupportBtn && supportPopup) {
-        toggleSupportBtn.addEventListener('click', () => {
-            supportPopup.classList.toggle('hidden');
-        });
-
-        if (closeSupportBtn) {
-            closeSupportBtn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                supportPopup.classList.add('hidden');
-            });
-        }
-    }
-
     // 5. Forgot Password Modal Logic
     const forgotPasswordLink = document.getElementById('forgotPasswordLink');
     const forgotPasswordModal = document.getElementById('forgotPasswordModal');
